@@ -11,7 +11,7 @@ O código do livro *Foundations of Multithreaded, Parallel, and Distributed Prog
 
 ---
 
-## 📌 Contextualização do Problema
+## Contextualização do Problema
 
 O Jantar dos Filósofos ilustra os desafios da alocação de recursos compartilhados em sistemas concorrentes. Cinco filósofos sentam-se à mesa para pensar e comer. Para comer, cada filósofo precisa de dois garfos (o da sua esquerda e o da sua direita). No entanto, existem apenas 5 garfos disponíveis.
 
@@ -21,7 +21,7 @@ O Jantar dos Filósofos ilustra os desafios da alocação de recursos compartilh
 
 ---
 
-## 🏗️ Arquitetura e Paradigma em Elixir
+## Arquitetura e Paradigma em Elixir
 
 A solução utiliza o **Modelo de Atores**, onde cada entidade independente é um processo isolado que se comunica exclusivamente por troca de mensagens assíncronas ou síncronas.
 
@@ -32,7 +32,7 @@ A solução utiliza o **Modelo de Atores**, onde cada entidade independente é u
 
 ---
 
-## 🧬 Mapeamento do Código Original para Elixir
+## Mapeamento do Código Original para Elixir
 
 A tabela abaixo demonstra como o paradigma de comunicação do código original presente no livro foi mapeado para as construções nativas do Elixir:
 
@@ -50,7 +50,7 @@ Os servidores `Waiter` são registrados utilizando a tupla `{:global, {:waiter, 
 
 ---
 
-## 🔍 Análise Detalhada do Código Elixir (Linha por Linha)
+## Análise Detalhada do Código Elixir
 
 Abaixo encontra-se a decomposição técnica de como as regras de negócio e primitivas distribuídas do livro do Andrews foram traduzidas para a sintaxe do Elixir.
 
@@ -78,7 +78,7 @@ Este módulo corresponde inteiramente ao `module Waiter[5]` do código original.
 
 ---
 
-### 2. Módulo `Philosopher` (O Filósofo / Processo Ativo)
+### 2. Módulo `Philosopher` (O Filósofo)
 
 Este módulo mapeia o bloco comportamental concorrente `process Philosopher[i = 0 to 4]`.
 
@@ -90,8 +90,7 @@ Este módulo mapeia o bloco comportamental concorrente `process Philosopher[i = 
 
 ---
 
-## 🚀 Como Executar o Projeto
-
+## Como Executar o Projeto
 ### Pré-requisitos
 * Ter o [Elixir](https://elixir-lang.org/install.html) instalado na sua máquina (versão 1.12 ou superior recomendada).
 
