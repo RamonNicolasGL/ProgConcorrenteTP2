@@ -52,7 +52,7 @@ Os servidores `Waiter` são registrados utilizando a tupla `{:global, {:waiter, 
 
 ## Análise Detalhada do Código Elixir
 
-Abaixo encontra-se a decomposição técnica de como as regras de negócio e primitivas distribuídas do livro do Andrews foram traduzidas para a sintaxe do Elixir.
+Abaixo encontra-se a decomposição técnica de como as regras do livro do Andrews foram traduzidas para a sintaxe do Elixir.
 
 ### 1. Módulo `Waiter` (O Garçom / Servidor Replicado)
 
